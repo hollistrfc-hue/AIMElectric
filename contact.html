@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — AIM Electric LLC</title>
+  <meta name="description" content="Contact AIM Electric LLC in Stillwater, Oklahoma. Request a free estimate for residential or commercial electrical work." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="AIM Electric Home">
+        <img src="AIM_Logo.png" alt="AIM Electric LLC" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-gold">Get a Free Estimate</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-gold">Get a Free Estimate</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero hero-sm" aria-label="Page hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Let's Talk About<br>Your Project</h1>
+        <p>Free estimates, honest answers. Fill out the form and we'll be in touch within one business day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT SECTION ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Contact Info -->
+        <div class="contact-info fade-up">
+          <span class="section-label">Reach Out</span>
+          <h2>Real People,<br>Real Answers</h2>
+          <div class="divider"></div>
+          <p>Every message we receive is read by a member of our team. No automated replies, no runaround — just a straight response from the people who will actually do your work.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="ci-icon"></div>
+              <div>
+                <span class="ci-label">Based In</span>
+                <span class="ci-value">Stillwater, Oklahoma</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"></div>
+              <div>
+                <span class="ci-label">Response Time</span>
+                <span class="ci-value">Within 1 business day</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"></div>
+              <div>
+                <span class="ci-label">Service Area</span>
+                <span class="ci-value">Stillwater, Perkins, Cushing, Guthrie &amp; surrounding areas</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"></div>
+              <div>
+                <span class="ci-label">Estimates</span>
+                <span class="ci-value">Always free, no obligation</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 36px; padding: 24px; background: rgba(245,168,0,0.08); border-radius: var(--radius); border-left: 3px solid var(--gold);">
+            <p style="font-size: 0.88rem; color: var(--text-body); font-style: italic; line-height: 1.7;">"Submitted the form on a Monday morning and had a quote in my inbox by lunch. Work was done by Thursday. I wish every contractor operated this way."</p>
+            <p style="font-size: 0.78rem; font-weight: 700; color: var(--navy); margin-top: 10px;">— Kevin D., Stillwater OK</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-card fade-up delay-2">
+          <h3>Request a Free Estimate</h3>
+          <p class="subtitle">Tell us about your project and we'll get back to you within one business day.</p>
+
+          <div id="contact-success" style="display: none; flex-direction: column; align-items: center; text-align: center; padding: 40px 0;">
+            <div style="width: 56px; height: 4px; background: var(--gold); margin: 0 auto 24px;"></div>
+            <span style="display: block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px;">Message Received</span>
+            <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin-bottom: 12px;">We'll Be in Touch Soon</h2>
+            <div style="width: 40px; height: 3px; background: var(--gold); margin: 0 auto 20px;"></div>
+            <p style="font-size: 0.93rem; color: var(--text-body); max-width: 360px; line-height: 1.7;">We got your request and will reach out within one business day with your free estimate.</p>
+          </div>
+
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thank-you.html"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="c_name">Full Name *</label>
+                <input type="text" id="c_name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="c_phone">Phone Number *</label>
+                <input type="tel" id="c_phone" name="phone" placeholder="(555) 000-0000" required />
+              </div>
+              <div class="form-group full">
+                <label for="c_email">Email Address *</label>
+                <input type="email" id="c_email" name="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group full">
+                <label for="c_service">Type of Service *</label>
+                <select id="c_service" name="service" required>
+                  <option value="" disabled selected>What do you need help with?</option>
+                  <option>Residential Wiring</option>
+                  <option>Commercial Electrical</option>
+                  <option>Panel Upgrade / Service Change</option>
+                  <option>Lighting Installation</option>
+                  <option>EV Charger Installation</option>
+                  <option>Troubleshooting / Repair</option>
+                  <option>Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="c_message">Project Details *</label>
+                <textarea id="c_message" name="message" placeholder="Describe your project — what needs to be done, the location, any relevant details..." required style="min-height: 130px;"></textarea>
+              </div>
+              <div class="form-group full form-submit">
+                <button type="submit" class="btn btn-primary">Send My Request</button>
+                <p style="font-size: 0.76rem; color: var(--text-body); margin-top: 10px;">By submitting, you agree to be contacted by AIM Electric LLC at the number or email provided.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA STRIP ═══ -->
+  <section class="cta-strip">
+    <div class="container">
+      <span class="section-label eyebrow">Questions First?</span>
+      <h2>Not Sure What You Need?</h2>
+      <p>Browse our services page to see the full range of what we do — or just reach out and describe the problem. We'll help you figure out the rest.</p>
+      <div class="cta-actions">
+        <a href="services.html" class="btn btn-gold">View Our Services</a>
+        <a href="about.html" class="btn btn-outline-white">About AIM Electric</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="AIM_Logo.png" alt="AIM Electric LLC" class="footer-logo" />
+          <p>Licensed electrical contractor serving residential and commercial clients in Stillwater and surrounding central Oklahoma communities.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Free Estimate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Stillwater, Oklahoma</a></li>
+            <li><a href="contact.html">Request an Estimate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 AIM Electric LLC. All rights reserved.</span>
+        <span class="footer-credit">Site By <a href="https://www.novabuildweb.com" target="_blank" rel="noopener noreferrer">NovaBuild LLC</a></span>
+        <span>Licensed &amp; Insured — Stillwater, OK</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
