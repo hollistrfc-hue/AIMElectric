@@ -600,6 +600,101 @@ body { padding-top: 68px; }
 .footer-credit a { color: rgba(255,255,255,0.65); transition: color var(--ease); }
 .footer-credit a:hover { color: var(--gold); }
 
+/* ── PROJECT GALLERY ── */
+.work-feature-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.work-feature-main {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.work-feature-main img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.work-feature-main:hover img { transform: scale(1.03); }
+
+.work-feature-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.work-feature-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  flex: 1;
+}
+.work-feature-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.work-feature-item:hover img { transform: scale(1.03); }
+
+.work-feature-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 16px;
+  background: linear-gradient(to top, rgba(10,31,68,0.75) 0%, transparent 100%);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.work-grid-label {
+  margin-bottom: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-border);
+}
+
+.work-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.work-photo-item {
+  overflow: hidden;
+  border-radius: var(--radius);
+  aspect-ratio: 1 / 1;
+  background: var(--gray-border);
+}
+.work-photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.work-photo-item:hover img { transform: scale(1.05); }
+
+@media (max-width: 900px) {
+  .work-feature-grid { grid-template-columns: 1fr; }
+  .work-feature-main img { height: 360px; }
+  .work-feature-stack { flex-direction: row; }
+  .work-feature-item { height: 200px; }
+  .work-photo-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .work-feature-stack { flex-direction: column; }
+  .work-feature-item { height: 220px; }
+  .work-photo-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ── FADE UP ANIMATION ── */
 .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.55s ease, transform 0.55s ease; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
