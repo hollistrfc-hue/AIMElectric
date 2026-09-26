@@ -8,9 +8,34 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>About Us — AIM Electric LLC</title>
-  <meta name="description" content="Learn about AIM Electric LLC — a licensed electrical contractor based in Stillwater, Oklahoma with over a decade of residential and commercial experience." />
+  <title>About AIM Electric LLC | Licensed Electrician | Stillwater, OK</title>
+  <meta name="description" content="AIM Electric LLC is a licensed and insured electrician based in Stillwater, OK with 10+ years of experience. Residential and commercial electrical work done right — serving Stillwater, Perkins, Cushing, Guthrie, and central Oklahoma." />
   <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "AIM Electric LLC",
+    "image": "https://aimelectric-ok.com/AIM_Logo.png",
+    "url": "https://aimelectric-ok.com",
+    "telephone": "+14057474475",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stillwater",
+      "addressRegion": "OK",
+      "addressCountry": "US"
+    },
+    "description": "AIM Electric LLC is a licensed and insured electrical contractor based in Stillwater, Oklahoma, serving residential and commercial clients across central Oklahoma.",
+    "areaServed": [
+      {"@type": "City", "name": "Stillwater", "containedInPlace": {"@type": "State", "name": "Oklahoma"}},
+      {"@type": "City", "name": "Perkins", "containedInPlace": {"@type": "State", "name": "Oklahoma"}},
+      {"@type": "City", "name": "Cushing", "containedInPlace": {"@type": "State", "name": "Oklahoma"}},
+      {"@type": "City", "name": "Guthrie", "containedInPlace": {"@type": "State", "name": "Oklahoma"}},
+      {"@type": "City", "name": "Edmond", "containedInPlace": {"@type": "State", "name": "Oklahoma"}}
+    ],
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 <body>
 
@@ -48,9 +73,9 @@
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
-        <span class="eyebrow">About AIM Electric</span>
+        <span class="eyebrow">About AIM Electric — Stillwater, OK</span>
         <h1>Local. Licensed.<br>Dependable.</h1>
-        <p>We're not a franchise or a call center — we're a local team that shows up, does the work right, and stands behind every job.</p>
+        <p>We're not a franchise or a call center — we're a local electrician team in Stillwater that shows up, does the work right, and stands behind every job.</p>
       </div>
     </div>
   </section>
@@ -205,6 +230,7 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
+            <li><a href="tel:+14057474475">(405) 747-4475</a></li>
             <li><a href="contact.html">Stillwater, Oklahoma</a></li>
             <li><a href="contact.html">Request an Estimate</a></li>
           </ul>
@@ -218,6 +244,14 @@
     </div>
   </footer>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17FGVHYV53"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-17FGVHYV53');
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
